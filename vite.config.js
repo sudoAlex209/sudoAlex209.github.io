@@ -1,11 +1,12 @@
+import { defineConfig } from 'vite';
+
 export default {
   base: '/',
-  optimizeDeps: {
-    include: ['@mkkellogg/gaussian-splats-3d']
-  },
   build: {
     rollupOptions: {
-      external: [],
-    }
-  }
+      input: {
+        main: 'index.html',
+      },
+    },
+  },
 };
